@@ -15,12 +15,15 @@
 <body>
     <header>
         <section class="section header-menu">
-            <div class="section__wrapper container">
+            <div class="section__wrapper container menu__wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="img/bars-solid.svg" width="30px" alt="">
+                </button>
                 <div class="menu">
-                    <ul class="mainmenu__list>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">Для мужчин</a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">Для женщин</a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей</a></li>
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для мужчин<img src="img/Polygon.svg" alt=""></a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для женщин<img src="img/Polygon.svg" alt=""></a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей<img src="img/Polygon.svg" alt=""></a></li>
                     </ul>
                 </div>
 
@@ -31,9 +34,9 @@
                 </div>
 
                 <div class="menu">
-                    <ul class="mainmenu__list>
-                        <li class=" mainmenu__item"><a class="menu__link" href="#">Оплата</a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">Доставка</a></li>
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__item1"><a class="menu__link" href="#">Оплата</a></li>
+                        <li class="mainmenu__item1"><a class="menu__link" href="#">Доставка</a></li>
                     </ul>
                 </div>
 
@@ -55,7 +58,27 @@
         </section>
         <section class="section banner">
             <div class="container">
-                2
+                <div class="slider_wrapper">
+                    <div class="slider_list">
+                        <div class="slider_item">
+                            <div class="slider_item-text">
+                                <p class="slider_text">Зимняя распродажа</p>
+                                <p class="slider_big-text">Скидки до 90%</p>
+                                <a href="#" class="button">Смотреть модели</a>
+                            </div>
+                            <div class="slider_item-price">
+                                <p class="slider_price--old">9900&#8381;</p>
+                                <p class="slider_price--new">1 900&#8381;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="slider_button slider_button--prev">
+                    <img src="img/prev.png" alt="">
+                </button>
+                <button type="button" class="slider_button slider_button--next">
+                    <img src="img/next.png" alt="">
+                </button>
             </div>
         </section>
     </header>
@@ -95,35 +118,159 @@
             </div>
         </section>
         <section class="section dress">
-            <div class="container">
-                5
+            <div class="container section__wrapper dress__wrapper">
+                <div class="dress__item-grey">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-cream">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-grey">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-cream">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-grey">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-cream">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-grey">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
+                <div class="dress__item-cream">
+                    <img src="img/tshirt.png" alt=""><p class="product-name">ПЛАТЬЯ</p>
+                </div>
             </div>
         </section>
         <section class="section new">
             <div class="container">
-                6
+                <h2>Новые модели</h2>
+                <div class="catalog">
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                </div>
+                <button>
+                    ВСЕ МОДЕЛИ
+                    <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.3536 4.03553C20.5488 3.84027 20.5488 3.52369 20.3536 3.32842L17.1716 0.146442C16.9763 -0.0488198 16.6597 -0.0488198 16.4645 0.146442C16.2692 0.341705 16.2692 0.658287 16.4645 0.853549L19.2929 3.68198L16.4645 6.5104C16.2692 6.70567 16.2692 7.02225 16.4645 7.21751C16.6597 7.41277 16.9763 7.41277 17.1716 7.21751L20.3536 4.03553ZM0 4.18198L20 4.18198V3.18198L0 3.18198L0 4.18198Z" fill="white"/>
+                    </svg>
+                </button>
             </div>
         </section>
         <section class="section subscribe">
-            <div class="container">
-                7
+            <div class="subscribe-section">
+                <h2>ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h2>
+                <input type="email" placeholder="Ваш e-mail" class="email-input">
+                <button class="subscribe-btn">ПОДИСАТЬСЯ</button>
             </div>
         </section>
-        <section class="section sale">
+        <section class="section new">
             <div class="container">
-                8
+                <h2>Скидки до 90%</h2>
+                <div class="catalog">
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/dress.png" alt="коктейльное платье">
+                        <h3>Коктейльное<br> платье</h3>
+                        <p class="card-price">₽ 40 000</p>
+                    </div>
+                </div>
+                <button>
+                    ВСЕ МОДЕЛИ
+                    <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.3536 4.03553C20.5488 3.84027 20.5488 3.52369 20.3536 3.32842L17.1716 0.146442C16.9763 -0.0488198 16.6597 -0.0488198 16.4645 0.146442C16.2692 0.341705 16.2692 0.658287 16.4645 0.853549L19.2929 3.68198L16.4645 6.5104C16.2692 6.70567 16.2692 7.02225 16.4645 7.21751C16.6597 7.41277 16.9763 7.41277 17.1716 7.21751L20.3536 4.03553ZM0 4.18198L20 4.18198V3.18198L0 3.18198L0 4.18198Z" fill="white"/>
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
     <footer>
         <section class="section footer-menu">
-            <div class="container">
-                9
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="footer-col">
+                        <div class="logo">THE LOOP</div>
+                        <p class="footer-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla faucibus egestas elit, at eleifend elit ornare ut.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>ОСНОВНЫЕ ССЫЛКИ</h4>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>КАТЕГОРИИ</h4>
+                        <ul>
+                            <li><a href="#">Мужская одежда</a></li>
+                            <li><a href="#">Женская одежда</a></li>
+                            <li><a href="#">Детская одежда</a></li>
+                            <li><a href="#">Для животных</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>ПОЛЕЗНЫЕ ССЫЛКИ</h4>
+                        <ul>
+                            <li><a href="#">Таблица размеров</a></li>
+                            <li><a href="#">Блог о моде</a></li>
+                            <li><a href="#">Наша миссия</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>СОЦ СЕТИ</h4>
+                        <ul class="social-links">
+                            <li><a href="#"><img src="img/vk.svg" alt=""> VK.com</a></li>
+                            <li><a href="#"><img src="img/fb.svg" alt=""> Facebook</a></li>
+                            <li><a href="#"><img src="img/ins.svg" alt=""> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section copy">
-            <div class="container">
-                10
+            <div class="copy">
+                <div class="cop1"><p>Copyright © 2019. Все права защищены</p></div>
+                <div class="cop2"><p>Политика приватности</p></div>
             </div>
         </section>
     </footer>
