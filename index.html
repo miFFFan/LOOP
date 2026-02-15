@@ -23,7 +23,7 @@
                     <ul class="mainmenu__list">
                         <li class="mainmenu__item"><a class="menu__link" href="#">Для мужчин<img src="img/Polygon.svg" alt=""></a></li>
                         <li class="mainmenu__item"><a class="menu__link" href="#">Для женщин<img src="img/Polygon.svg" alt=""></a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей<img src="img/Polygon.svg" alt=""></a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей<img src="img/Polygon.svg" alt=""></a></li><br>
                     </ul>
                 </div>
 
@@ -274,6 +274,15 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus = document.querySelectorAll(".menu");
+        btn.addEventListener('click', () => {
+            for (let el of menus){
+                el.classList.toggle("show");
+            }
+        })
+    </script>
 </body>
 
 </html>

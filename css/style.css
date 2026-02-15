@@ -40,7 +40,6 @@ header{
 ul{
     list-style: none;
     display: flex;
-    gap: 30px;
     flex-direction: row;
     
 
@@ -55,23 +54,21 @@ ul{
 
 .menu__link:hover{
     text-decoration: none;  
-    color: green;   
+    color: #947762;   
     
 }
 
 .slider_item-text .button:hover{
-    background-color: green;
+    background-color: #947762;
 }
 .menu__link{
     color: black;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .mainmenu__list .mainmenu__item1{
-    border: 1px solid black ;
-    border-radius: 100px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
     size: 14px;
 }
 
@@ -130,7 +127,6 @@ ul{
     background: url(../img/woman.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    padding-left: 35px;
 }
 
 .man-woman h2{
@@ -156,7 +152,7 @@ ul{
     margin-top: 40px;
 }
 .man-woman a:hover{
-    background:#c26624 ;
+    background:#947762 ;
 }
 
 /*-----------------section new-------------------*/
@@ -322,12 +318,13 @@ ul{
     width: 277px;
     height: 236px;
     text-align: right;
-    
 }
 
 .dress__item-grey img,
 .dress__item-cream img{
-    height: 236px;
+    width: 100%; /* Чтобы картинка занимала всю ширину */
+    height: auto; /* Автовысота для сохранения пропорций */
+    display: block;
 }
 .product-name {
   position: absolute;
@@ -457,7 +454,7 @@ ul{
     cursor: pointer;
 }
 .subscribe-btn:hover{
-    background-color: green;
+    background-color: #947762;
 }
 
 
@@ -469,6 +466,12 @@ ul{
         .slider_button--next{
             right: 0;
         }
+}
+@media(max-width:1110px){
+    .dress__item-grey,
+    .dress__item-cream {
+        width: 25%;
+    }
 }
 
 @media(max-width:1100px){
@@ -500,7 +503,6 @@ ul{
     }
     .man, .woman{
         width: 100%;
-        padding-left: 35px;
     }
     .man-woman{
         background: linear-gradient(180deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
@@ -527,17 +529,29 @@ ul{
         order: -1;
         text-align: right;
     }
+    .dress__item-grey,
+    .dress__item-cream {
+        width: 33%;
+    }
 }
 
 @media(max-width:600px){
     .basket,
     .menu{
         display: none;
+        width: 100%;
     }
 
     .navbar-toggler{
         display: block;
     }
+    .mainmenu__list{
+        flex-direction: column;
+    }
+}
+.show{
+    display: block;
+    
 }
 
 @media(max-width:576px){
@@ -551,6 +565,17 @@ ul{
     }
     .catalog{
         margin-top: 50px;
+    }
+    .dress__item-grey,
+    .dress__item-cream {
+        width: 50%;
+    }
+}
+
+@media(max-width:320px){
+    .dress__item-grey,
+    .dress__item-cream {
+        width: 100%;
     }
 }
 
