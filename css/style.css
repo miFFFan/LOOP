@@ -221,15 +221,18 @@ ul{
 
 /*-----------------section banner-------------------*/
 
+.banner{
+    min-height: 500px;
+    min-width: 320px;
+}
 .slider_item{
     display: flex;
     padding-top: 166px;
     justify-content: space-between;
     min-height: 564px;
     background: url(/img/shoes.png) no-repeat right center;
-
-    height: 377px;
-    width: 556  ;
+    height: 100%;
+    width: 100%;
 }
 
 .slider_text{
@@ -387,14 +390,8 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
-.cop1{
-    padding: 30px 205px 23px 656px;
-}
-.cop2{
-    padding: 30px 656px 23px 405px;
-}
-
 .cop1,
 .cop2{
     width: 300px;
@@ -418,7 +415,6 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
 
 .subscribe-section {
@@ -570,12 +566,32 @@ ul{
     .dress__item-cream {
         width: 50%;
     }
+    .subscribe-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    height: 180px;
+    width: 100%;
+}
 }
 
 @media(max-width:320px){
     .dress__item-grey,
     .dress__item-cream {
         width: 100%;
+    }
+    .subscribe-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    height: 180px;
+    width: 100%;
     }
 }
 
