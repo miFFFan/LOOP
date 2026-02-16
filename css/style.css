@@ -35,7 +35,7 @@ header{
     top: 0;
     z-index: 100;
     background-color: #F9F6F1;
-    
+    position: fixed;
 }
 ul{
     list-style: none;
@@ -230,7 +230,7 @@ ul{
     padding-top: 166px;
     justify-content: space-between;
     min-height: 564px;
-    background: url(/img/shoes.png) no-repeat right center;
+    background: url(../img/shoes.png) no-repeat right center;
     height: 100%;
     width: 100%;
 }
@@ -454,6 +454,11 @@ ul{
 }
 
 
+.footer-col ul li a{
+    gap: 20px;
+}
+
+
 
 @media(max-width:1326px){
         .slider_button--prev{
@@ -508,7 +513,7 @@ ul{
         width: 45%;
     }
 
-    .slider_wrapper{
+    .banner{
         display: none;
     }
     .slider_button{
